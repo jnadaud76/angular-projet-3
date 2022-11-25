@@ -5,15 +5,19 @@ import { SocialMediaRoutingModule } from './social-media-routing.module';
 import {PostsService} from "./services/posts.service";
 import { PostListComponent } from './components/post-list/post-list.component';
 import {PostsResolver} from "./resolver/post.resolver";
+import { PostListItemComponent } from './components/post-list-item/post-list-item.component';
+import {SharedModule} from "../shared/shared.module";
 
 
 @NgModule({
   declarations: [
-    PostListComponent
+    PostListComponent,
+    PostListItemComponent
   ],
   imports: [
     CommonModule,
-    SocialMediaRoutingModule
+    SocialMediaRoutingModule,
+    SharedModule
   ],
   providers: [
     PostsService,
