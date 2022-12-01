@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { CommentsComponent } from './components/comments/comments.component';
+import {NgModule} from '@angular/core';
+import {CommonModule} from '@angular/common';
+import {CommentsComponent} from './components/comments/comments.component';
 import {MaterialModule} from "./material.module";
 import {ReactiveFormsModule} from "@angular/forms";
 import {ShortenPipe} from "./pipes/shorten.pipe";
@@ -22,8 +22,8 @@ import {HighlightDirective} from "./directives/highlight.directive";
     ReactiveFormsModule
   ],
   exports: [
-   CommentsComponent,
-   MaterialModule,
+    CommentsComponent,
+    MaterialModule,
     ReactiveFormsModule,
     ShortenPipe,
     UserNamePipe,
@@ -31,4 +31,5 @@ import {HighlightDirective} from "./directives/highlight.directive";
     HighlightDirective
   ]
 })
-export class SharedModule { }
+export class SharedModule {
+}
